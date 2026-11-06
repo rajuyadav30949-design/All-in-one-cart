@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap');
+
+:root{font-family:'DM Sans',sans-serif;color:#211d3b;background:#fff;scroll-behavior:smooth;font-synthesis:none}
+*{box-sizing:border-box}
+body{margin:0}
+a{color:inherit;text-decoration:none}
+.header{height:auto;min-height:76px;padding:18px 7%;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid #eeeaf7}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+.brand-icon{font-size:25px}
+nav{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:600}
+.nav-button,.primary-button{display:inline-flex;align-items:center;justify-content:center;background:#6946d9;color:white;border:0;border-radius:12px;padding:14px 20px;font:700 14px 'DM Sans',sans-serif;cursor:pointer;transition:.2s}
+.nav-button:hover,.primary-button:hover{background:#5030bd;transform:translateY(-1px)}
+.language-button{border:1px solid #ddd5f5;border-radius:10px;padding:10px 13px;background:white;color:#5030bd;font-weight:700;cursor:pointer}
+.hero{padding:90px 9%;min-height:490px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:40px;background:linear-gradient(120deg,#f5f1ff,#fbfaff)}
+.eyebrow{color:#7655d7;font-size:11px;font-weight:800;letter-spacing:2px}
+h1,h2,h3{font-family:Manrope,sans-serif}
+h1{font-size:clamp(38px,5vw,60px);line-height:1.08;margin:18px 0}
+h1 span{color:#7655d7}
+.hero p,.section-heading p,.order-info p,.support-banner p{color:#77718a;line-height:1.8}
+.hero-content>p{max-width:520px}
+.hero-note{font-size:12px;color:#77718a;margin-top:20px}
+.hero-card{min-height:300px;border-radius:28px;background:linear-gradient(145deg,#795be0,#4b31ae);display:grid;place-items:center;position:relative;box-shadow:0 25px 60px #6045bd35}
+.cart-art{font-size:120px}
+.floating-card{position:absolute;bottom:25px;left:-25px;background:white;border-radius:15px;padding:15px 18px;display:flex;align-items:center;gap:12px;box-shadow:0 10px 30px #211d3b20}
+.floating-card>span{font-size:28px}.floating-card small{display:block;color:#827d91;margin-top:4px}
+.section{padding:75px 9%}
+.section-heading{text-align:center;margin-bottom:35px}
+.section-heading h2,.order-info h2,.support-banner h2{font-size:32px;margin:10px 0}
+.steps,.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step,.category-card{padding:25px;border:1px solid #eeeaf7;border-radius:18px;background:#fff}
+.step-number{color:#a89bd7;font-weight:800}.step-icon,.category-icon{display:block;font-size:34px;margin:18px 0}
+.step p,.category-card p{color:#817b91;line-height:1.6;font-size:14px}
+.categories{grid-template-columns:repeat(4,1fr)}
+.categories-section{background:#faf9fe}
+.order-section{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.order-info ul{list-style:none;padding:0;line-height:2.5;color:#5c5670}
+.order-form{padding:28px;border:1px solid #eeeaf7;border-radius:20px;box-shadow:0 15px 40px #211d3b0b}
+.order-form h3{margin-top:0;font-size:22px}
+.order-form label{display:block;font-size:13px;font-weight:700;margin:15px 0 7px}
+.order-form input,.order-form textarea{width:100%;padding:13px;border:1px solid #ded9eb;border-radius:10px;font:14px 'DM Sans',sans-serif;outline:none}
+.order-form input:focus,.order-form textarea:focus{border-color:#7655d7;box-shadow:0 0 0 3px #7655d71a}
+.full-width{width:100%;margin-top:18px}
+.form-note,#form-message{font-size:12px;color:#77718a;line-height:1.6}
+#form-message{font-weight:700;color:#5030bd}
+.support-banner{margin:10px 9% 70px;padding:35px 40px;border-radius:20px;background:#f5f1ff;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.footer{text-align:center;padding:35px 20px;background:#211d3b;color:white}
+.footer .brand{justify-content:center}.footer p{color:#c9c3db}.footer small{color:#aaa3c0}
+button:disabled{opacity:.6;cursor:not-allowed}
+@media(max-width:760px){.header{align-items:flex-start;flex-direction:column}nav{width:100%;gap:14px;flex-wrap:wrap;font-size:12px}.hero{grid-template-columns:1fr;padding:60px 7%}.hero-card{min-height:230px}.section{padding:55px 7%}.steps,.categories{grid-template-columns:1fr 1fr}.order-section{grid-template-columns:1fr;gap:25px}.support-banner{margin:10px 7% 45px;padding:25px;align-items:flex-start;flex-direction:column}}
+@media(max-width:430px){.steps,.categories{grid-template-columns:1fr}.nav-button{padding:10px 13px}.order-form{padding:20px}}
